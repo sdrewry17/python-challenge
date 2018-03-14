@@ -40,6 +40,8 @@ financial_analysis = ["Financial Analysis" "\n--------------------",
                       "\nGreatest Decrease in Revenue:", str(min_delta.iloc[0]), 
                       "($", str(min_delta.iloc[2]), ")"]
 
+print(financial_analysis)
+
 #writing to file
 with open('financial_analysis.txt', 'w') as txtfile:
     txtfile.writelines(financial_analysis)
