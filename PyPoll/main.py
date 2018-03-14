@@ -36,5 +36,7 @@ election_results = ["Election Results" "\n--------------------\n",
                     "\nTotal Votes: ", str(vote_count),
                     "\nWinner: ", str(winner['Candidate'])]
 
+print(election_results)
+
 with open('election_results.txt', 'w') as txtfile:
     txtfile.writelines(election_results)
